@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('bg.gif');
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#title {
+    
+    padding-top: 40px;
+    color:aqua;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;   
+}
+
+.picsize {
+    height: 80px;
+    width: 80px;
+}
+
+.container {
+    width: 70%;
+    display: grid;
+    justify-content: center;
+    margin: 50px 190px;
+}
+
+.firstrow, .secondrow, .thirdrow, .fourthrow, .fifthrow, .sixthrow, .seventhrow, .eightrow {
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+}
+
+.tilesB {
+    background-image: repeating-linear-gradient(36deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 1px, transparent 0px, transparent 2px);
+    background-color: rgb(92, 65, 41);
+}
+
+.tilesA {
+    background-image: repeating-linear-gradient(-26deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 2px, transparent 3px, transparent 7px);
+    background-color: rgb(199, 194, 194);
+}
+
+.tile2 {
+    background-image: repeating-linear-gradient(36deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 1px, transparent 0px, transparent 2px);
+    background-color: rgb(92, 65, 41);
+    height: 80px;
+    width: 80px;
+}
+
+.tile1 {
+    background-image: repeating-linear-gradient(-26deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 2px, transparent 3px, transparent 7px);
+    background-color: rgb(199, 194, 194);
+    height: 80px;
+    width: 80px;
+}
+
+.tilesB:hover, .tile2:hover {
+    background-color: rgb(145, 91, 45);
+}
+
+.tilesA:hover, .tile1:hover {
+    background-color: bisque;
+}
+
+#move1 {
+    position: relative;
+    animation-name: move1;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move1 {
+    from {top: 0px;}
+    to {top: -80px;}   
+}
+
+#move2 {
+    position: relative;
+    animation-name: move2;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+@keyframes move2 {
+    from {top: 0px;}
+    to {top: 160px;}   
+}
+
+#move3 {
+    position: relative;
+    animation-name: move3;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 6s;
+}
+
+@keyframes move3 {
+    from {top: 0px;}
+    to {top: -160px;}
+}
+
+#move4 {
+    position: relative;
+    animation-name: move4;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 9s;
+}
+
+@keyframes move4 {
+    from {top:0px;}
+    to {transform: translateX(320px) translateY(327px);}
+}
