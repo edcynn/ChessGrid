@@ -35,25 +35,27 @@ body {
 
 .container {
     display: grid;
+    grid-template-columns: repeat(8, 1fr);
     justify-content: center;
     margin: 50px auto;
-    border: solid rgb(66, 51, 51) 15px;
-    border-style: groove;
+    border: solid black 5px;
+    width: 650px;
+   
 }
 
-.firstrow, .secondrow, .thirdrow, .fourthrow, .fifthrow, .sixthrow, .seventhrow, .eightrow {
-    display: grid;
-    grid-template-columns: repeat(8,1fr);
-}
 
 .tilesB {
     background-image: repeating-linear-gradient(36deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 1px, transparent 0px, transparent 2px);
     background-color: rgb(92, 65, 41);
+    height: 80px;
+    width: 80px;
 }
 
 .tilesA {
     background-image: repeating-linear-gradient(-26deg, rgba(255,255,255, 0.25), rgba(255,255,255, 0.25) 2px, transparent 3px, transparent 7px);
     background-color: rgb(199, 194, 194);
+    height: 80px;
+    width: 80px;
 }
 
 .tile2 {
